@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<!-- 导航栏 -->
+<view class="indexBox">
+	<view class="box">
+		<!--轮播图 -->
+		<view class="swiper">
+			<view class="Geography">
+				<image src="../../static/image/position.png"></image>
+				<text>1231</text>
+			</view>
+			<swiper ndicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#4eb8b8" autoplay="true" interval='2000' circular='true' indicator-dots="true" indicator-active-color="#ff6203" class="swiperBox">
+				<block>
+					<swiper-item class="demo-text-1">
+						<image src="../../static/image/banner.png" mode="scaleToFill"></image>
+					</swiper-item>
+					<swiper-item class="demo-text-1">
+						<image src="../../static/image/banner.png"></image>
+					</swiper-item>
+					<swiper-item class="demo-text-1">
+						<image src="../../static/image/banner.png"></image>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<!-- 导航 -->
+
+		<view class="banner">
+			<view class="bannerBox">
+				<view wx:for="{{icon}}" wx:key="index" class="iconBox">
+					<navigator url='{{item.url}}'>
+						<!-- <image :src="{{icon}}[index].path"></image> -->
+						<view>
+							<image src="{{item.path}}"></image>
+						</view>
+						{{item.title}}
+					</navigator>
+				</view>
+			</view>
+		</view>
+		<!-- 生活服务 -->
+		<view class="serve">
+			<view class="tabbar">
+				<text wx:for="{{tabarTitle}}"  bindtap="tabbarActive" data-active="{{index}}" wx:key="index" class=" {{currentTab == index ?'tabbarActive':''}}">
+				{{item.title}}
+				</text>
+			</view>
+			<view wx:if="{{tabarTitle[0].isAcitve}}">
+				{{tabarTitle[0].title}} {{tabarTitle[0].isAcitve}}
+			</view>
+			<view wx:if="{{tabarTitle[1].isAcitve}}">
+				{{tabarTitle[1].title}} {{tabarTitle[1].isAcitve}}
+			</view>
+			<view wx:if="{{tabarTitle[2].isAcitve}}">
+				{{tabarTitle[2].title}} {{tabarTitle[2].isAcitve}}
+			</view>
+			<view wx:if="{{tabarTitle[3].isAcitve}}">
+				{{tabarTitle[3].title}} {{tabarTitle[3].isAcitve}}
+			</view>
+		</view>
+	</view>
+</view>

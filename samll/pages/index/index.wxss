@@ -1,0 +1,97 @@
+.indexBox {
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.box {
+  width: 100%;
+  box-sizing: border-box;
+  background-color:#f6f6f6 ;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 140rpx;
+  z-index: 9;
+}
+
+.Geography {
+  position: absolute;
+  z-index: 9;
+  top: 12.7rpx;
+  left: 31.4rpx;
+}
+
+.Geography image {
+  width: 20.53rpx;
+  height: 26rpx;
+  margin-right: 20rpx;
+}
+
+.Geography text {
+  font-size: 22rpx;
+}
+
+.demo-text-1 {
+  border-radius: 10px;
+  height: 100%;
+}
+.demo-text-1 image {
+  width: 100%;
+  /* border-radius: 10rpx; */
+}
+
+
+
+.banner {
+  width: 100%;
+  height: 350rpx;
+  background-color: #f6f6f6;
+  padding-top: 61.6rpx;
+  box-sizing: border-box;
+}
+
+.bannerBox {
+  height: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.iconBox {
+  /* float: left;
+  width: 20%;
+  height: 85rpx; */
+  width: 20%;
+  height: 85rpx;
+  font-size: 24rpx;
+  margin-bottom: 36rpx;
+  text-align: center;
+ 
+}
+.iconBox image {
+  width: 48rpx;
+  height: 48rpx;
+}
+.serve {
+  width: 100%;
+  min-height: 200rpx;
+  border: #c4c4c4 2rpx solid;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.tabbar {
+  display: flex;
+  justify-content: center;
+}
+.tabbar text {
+  margin-right: 30rpx;
+  font-weight: 700;
+}
+.tabbarActive {
+  color: #fc4b00;
+}
